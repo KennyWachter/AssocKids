@@ -9,8 +9,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -61,26 +61,11 @@ a:hover {
   box-shadow: 0 0 1vi 0.2vi black;
 }
 
-iframe{
-  position: absolute;
-  object-fit: cover;
-  height: 100vh;
-  width: 100vw;
-  filter: invert(20%);
-  left: 0;
-}
-
-.modalbtn{
-  position: absolute;
-  top: 50%;
-}
-
-
-
 @media (max-width: 575px) {
   .modalbtn {
     height: 12vi;
     width: 12vi;
+    left: 45vw;
   }
 }
 
@@ -92,17 +77,24 @@ iframe{
     height: 15vi;
   }
 
-  
+  .menubtn {
+    left: 45vw;
+
+  }
 
   .modalbtn {
     height: 10vi;
     width: 10vi;
+    left: 45vw;
   }
 }
 
 @media (min-width: 768px) {
 
-  
+  .menubtn {
+    left: 45vw;
+
+  }
 
   .logo {
     width: 10vi;
@@ -112,7 +104,7 @@ iframe{
   .modalbtn {
     height: 8vi;
     width: 8vi;
-    
+    left: 50vw;
   }
 
 }
@@ -134,3 +126,9 @@ iframe{
   }
 }
 
+section{
+margin: 5vi;
+padding: 5vi;
+ width: 70vw;
+ left: 10vi;
+}

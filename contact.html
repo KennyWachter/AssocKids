@@ -1,18 +1,273 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Associations, Enfants, Activités, Voyages associatifs, Contact ">
+    <meta name="keywords" content="Associations, Kids, Activities, Associative trips, Contact ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact AssocKids</title>
-    <link rel="icon" type="image/png" href="..." />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" media="screen" type="text/css" href="contact.css"/>
+    <link rel="icon" type="image/png" href="img/assockids.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" type="text/css" href="contact.css" />
 </head>
+
 <body>
-    
+
+
+    <main class="wrapper h-100 text-center">
+
+        <!--background map-->
+
+        <iframe id="gmap_canvas"
+            src="https://maps.google.com/maps?q=2%20av.%20du%20G%C3%A9n%C3%A9ral%20Leclerc,%2075014%20Paris&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+
+
+
+        <header>
+            <!--Header navbar-->
+            <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75 p-0">
+                <div class="container-fluid p-0">
+
+                    <!--Header navbar brand-->
+                    <a class="navbar-brand m-0 p-0" href="index.html">
+                        <img src="img/assockids.svg" alt="AssocKids" class="logo">
+                    </a>
+
+                    <ul class="navbar-nav gap-3 me-3 collapse navbar-collapse justify-content-end">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="events.html">events</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+        <!--btn modal form-->
+        <button class="btn btn-info rounded-circle modalbtn" type="button" data-bs-toggle="modal"
+            data-bs-target="#Modal" role="form">
+            <i class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-envelope-paper" viewBox="0 0 16 16">
+                    <path
+                        d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+                </svg>
+            </i>
+        </button>
+
+
+
+        <!--modal form-->
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true"
+            data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-dark bg-opacity-75">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Contact us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+
+                        <form action="" class="form-text needs-validation p-0"  method="post" novalidate>
+                            <div class="form-floating mb-2">
+
+                                <input type="text" class="form-control" id="floatingName" placeholder="Nom" required>
+                                <label for="floatingName">Name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+
+                                <input type="text" class="form-control" id="floatingFirstName" placeholder="Prénom" required>
+                                <label for="floatingFirstName">First name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                                <label for="floatingEmail">Email adress</label>
+                            </div>
+                            <div class="form-floating mb-2">
+
+                                <textarea class="form-control " id="floatingTextArea" placeholder="Message" required></textarea>
+                                <label for="floatingTextArea">Your message</label>
+                            </div>
+
+                            <div class="">
+                                <button type="submit" class="btn rounded-pill">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--btn menu-->
+    <button class="btn btn-info rounded-pill menubtn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" role="menu">Menu</button>
+
+    <!--offcanvas-->
+    <div class="offcanvas offcanvas-bottom bg-dark" tabindex="-1" id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel">
+
+        <!--offcanvas header-->
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasBottomLabel">Menu</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+
+        <!--offcanvas body-->
+        <div class="offcanvas-body small d-flex flex-column">
+
+            <!--offcanvas body navigation-->
+            <nav class="navbar navbar-expand-lg bg-light bg-opacity-10 rounded-3 mb-2" role="navigation">
+                <div class="container-fluid">
+
+                    <div class="" id="navbarNav">
+                        <ul class="navbar-nav list-group list-group-horizontal gap-5">
+                            <li class="nav-item list-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item list-item">
+                                <a class="nav-link text-white" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item list-item">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--offcanvas body contacts-->
+            <div class="btn-group row gap-1 justify-content-around" role="group" aria-label="button contacts">
+
+                <button class="btn btn-info phone col-3" data-tippy-content="01 58 85 69 96">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-phone-vibrate-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0zM1.807 4.734a.5.5 0 1 0-.884-.468A7.967 7.967 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A6.967 6.967 0 0 1 1 8c0-1.18.292-2.292.807-3.266zm13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A7.967 7.967 0 0 0 16 8a7.967 7.967 0 0 0-.923-3.734zM3.34 6.182a.5.5 0 1 0-.93-.364A5.986 5.986 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A4.986 4.986 0 0 1 3 8c0-.642.12-1.255.34-1.818zm10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818 0 .642-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8c0-.769-.145-1.505-.41-2.182z" />
+                        </svg>
+                    </span>
+                </button>
+                <button class="btn btn-info mail col-3" data-tippy-content="contact@assockids.fr">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                    </i>
+                </button>
+                <button class="btn btn-info location col-3" data-tippy-content="2 av. du Général Leclerc 75014 Paris">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                            <path fill-rule="evenodd"
+                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <footer class="h-100 mt-5 flex-column">
+
+        <!--footer navbar-->
+        <nav class="navbar navbar-expand-sm" role="navigation">
+            <div class="container-fluid align-items-center justify-content-center flex-column">
+
+                <!--footer navbar brand-->
+                <h2 class="navbar-brand text-white">Join us</h2>
+
+                <!--footer navbar nav-->
+                <ul class="navbar-nav list-group-horizontal gap-3">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="legalnotice.html">Legal notice</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <!--navbar social media-->
+
+        <nav class="navbar navbar-expand-sm mt-5" role="navigation">
+            <div class="container-fluid justify-content-center flex-column">
+
+
+                <!--social media navbar nav-->
+                <ul class="navbar-nav gap-3 list-group-horizontal">
+                    <li class="nav-item ">
+                        <img class="nav-link" src="https://img.icons8.com/color/48/000000/facebook--v1.png" />
+                    </li>
+                    <li class="nav-item ">
+                        <img class="nav-link" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" />
+                    </li>
+                    <li class="nav-item ">
+                        <img class="nav-link" src="https://img.icons8.com/color/48/000000/tiktok--v1.png" />
+                    </li>
+                    <li class="nav-item ">
+                        <img class="nav-link" src="https://img.icons8.com/color/48/000000/youtube--v1.png" />
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <p class="icons8 d-flex justify-content-center">icons by
+            <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

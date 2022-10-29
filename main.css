@@ -21,6 +21,7 @@ body {
   height: 100vh;
   width: 100vw;
   filter: saturate(50%);
+  left: 0;
 }
 
 .logo{
@@ -76,6 +77,17 @@ a:hover{
   box-shadow: 0 0.5vi 1vi 0.2vi black;
 }
 
+#offcanvasBottom{
+  border-radius: 2em 2em 0 0;
+}
+
+.navbar-nav{
+  font-size: 0.8em;
+}
+
+.navbar-nav a:hover{
+  font-weight: 1000;
+}
 
 
 .card{
@@ -106,10 +118,7 @@ a:hover{
 
 @media (min-width: 768px) {
   
-  .menubtn{
-    left: 45vw;
   
-  }
   
   .logo{
     width: 10vi;
@@ -133,16 +142,6 @@ a:hover{
  
 }
 
-#offcanvasBottom{
-  border-radius: 2em 2em 0 0;
-}
 
-.navbar-nav{
-  font-size: 0.8em;
-}
-
-.navbar-nav a:hover{
-  font-weight: 1000;
-}
 
 
