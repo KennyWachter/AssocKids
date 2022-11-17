@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -12,19 +13,26 @@ body {
   color: #fff;
   background-color: #000;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 400;
 }
+
+.logo{
+  width: 25vi;
+  height: 25vi;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-a:hover {
-  background: linear-gradient(to top, #00e194, #05a4c8, #0d6fe5, #0db4f3);
+a:hover{
+  background:  linear-gradient(to top, #00e194, #05a4c8, #0d6fe5, #0db4f3);
   background-clip: text;
   color: transparent;
 }
+
 
 .btn {
   background: linear-gradient(to top, #00e194, #05a4c8, #0d6fe5, #0db4f3);
@@ -33,89 +41,75 @@ a:hover {
 
 .btn:hover {
   color: #fff;
-  background: linear-gradient(to top, #00e194, 40%, #05a4c8, #0d6fe5, #0db4f3);
+  background: linear-gradient(to top, #00e194,40%, #05a4c8, #0d6fe5, #0db4f3);
   border-color: transparent;
 }
 
-.logo {
-  width: 25vi;
-  height: 25vi;
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-}
-
-
-.navbar-nav {
-  font-size: 0.8em;
-}
-
-.navbar-nav a:hover {
-  font-weight: 1000;
-}
-
-
-.menubtn {
+.menubtn{
   position: fixed;
   bottom: 5vi;
   left: 45vw;
   z-index: 5;
-  box-shadow: 0 0 1vi 0.2vi black;
+  box-shadow: 0 0.5vi 1vi 0.2vi black;
 }
 
-h1{
-  background: linear-gradient(to top, #00e194, #05a4c8, #0d6fe5, #0db4f3);
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
+#offcanvasBottom{
+  border-radius: 2em 2em 0 0;
 }
 
-.collapse{
-  color: #000;
+.navbar-nav{
+  font-size: 0.8em;
 }
 
-.event img{
-  height: 466px;
-  width: 800px;
-  object-fit: fill;
+.navbar-nav a:hover{
+  font-weight: 1000;
 }
-
-@media (max-width: 575px) {
   
+main{
+  background: no-repeat left bottom url("img/conseiller-voyages.jpg");
+
+}
+  
+section{
+  position: absolute;
+  top: 30%;
 }
 
+.description{
+  left: 10vi;
+}
 
 @media (min-width: 576px) {
 
-  .logo {
+  .logo{
     width: 15vi;
     height: 15vi;
   }
 
-
-  
 }
 
 @media (min-width: 768px) {
-
-
-  .logo {
+  
+  
+  
+  .logo{
     width: 10vi;
     height: 10vi;
   }
 
- 
+  
+
 }
 
-@media (min-width: 992px) {
-
-  .logo {
+@media (min-width: 992px){
+  
+  .logo{
     width: 8vi;
     height: 8vi;
   }
 
-  .menubtn {
+  .menubtn{
     visibility: hidden;
   }
-
  
 }
-

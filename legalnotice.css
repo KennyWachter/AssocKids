@@ -43,6 +43,12 @@ a:hover {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
+section{
+  margin: 5vi;
+  padding: 5vi;
+   width: 70vw;
+   left: 10vi;
+  }
 
 .navbar-nav {
   font-size: 0.8em;
@@ -56,17 +62,13 @@ a:hover {
 .menubtn {
   position: fixed;
   bottom: 5vi;
-  left: 40vw;
+  left: 45vw;
   z-index: 5;
   box-shadow: 0 0 1vi 0.2vi black;
 }
 
 @media (max-width: 575px) {
-  .modalbtn {
-    height: 12vi;
-    width: 12vi;
-    left: 45vw;
-  }
+  
 }
 
 
@@ -77,36 +79,18 @@ a:hover {
     height: 15vi;
   }
 
-  .menubtn {
-    left: 45vw;
-
-  }
-
-  .modalbtn {
-    height: 10vi;
-    width: 10vi;
-    left: 45vw;
-  }
+  
 }
 
 @media (min-width: 768px) {
 
-  .menubtn {
-    left: 45vw;
-
-  }
 
   .logo {
     width: 10vi;
     height: 10vi;
   }
 
-  .modalbtn {
-    height: 8vi;
-    width: 8vi;
-    left: 50vw;
-  }
-
+  
 }
 
 @media (min-width: 992px) {
@@ -120,15 +104,6 @@ a:hover {
     visibility: hidden;
   }
 
-  .modalbtn {
-    height: 5vi;
-    width: 5vi;
-  }
+  
 }
 
-section{
-margin: 5vi;
-padding: 5vi;
- width: 70vw;
- left: 10vi;
-}

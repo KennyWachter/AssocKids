@@ -56,7 +56,7 @@ a:hover {
 .menubtn {
   position: fixed;
   bottom: 5vi;
-  left: 40vw;
+  left: 45vw;
   z-index: 5;
   box-shadow: 0 0 1vi 0.2vi black;
 }
